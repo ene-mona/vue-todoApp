@@ -227,6 +227,7 @@ const addTodo = () => {
 .wrapper {
   position: sticky !important;
   top: 0;
+  z-index: 100;
 }
 .name {
   width: 400px;
