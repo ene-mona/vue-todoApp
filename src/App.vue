@@ -228,7 +228,7 @@ const addTodo = () => {
   position: sticky !important;
   top: 0;
   z-index: 100;
-  background-color: black;
+  background-color: #181818;
 }
 .name {
   width: 400px;
@@ -264,6 +264,7 @@ const addTodo = () => {
   cursor: pointer;
   font-size: 18px;
   border-radius: 50%;
+  background-color: #181818;
 }
 .enterTodo {
   display: flex;
