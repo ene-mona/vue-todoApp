@@ -265,6 +265,7 @@ const addTodo = () => {
   font-size: 18px;
   border-radius: 50%;
   background-color: #181818;
+  color: white;
 }
 .enterTodo {
   display: flex;
