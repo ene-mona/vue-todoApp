@@ -1,6 +1,6 @@
 <template>
-  <header>
-    <div class="wrapper">
+  <header class="wrapper">
+    <div>
       <form class="name" @submit.prevent="submit">
         <input
           ref="inp"
