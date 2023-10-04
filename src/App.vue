@@ -19,25 +19,25 @@
         <!-- <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink> -->
       </nav>
+      <div class="addTodo">
+        <!-- <h4>Add a todo to your list</h4> -->
+        <form @submit.prevent="addTodo" class="enterTodo">
+          <input
+            type="text"
+            v-model="newTodo"
+            placeholder="What will you like to do?"
+          />
+
+          <select v-model="setPriorities" required>
+            <option value="important">Important</option>
+            <option value="very-important">Very important</option>
+          </select>
+          <button>Add</button>
+        </form>
+      </div>
     </div>
   </header>
 
-  <div class="addTodo">
-    <!-- <h4>Add a todo to your list</h4> -->
-    <form @submit.prevent="addTodo" class="enterTodo">
-      <input
-        type="text"
-        v-model="newTodo"
-        placeholder="What will you like to do?"
-      />
-
-      <select v-model="setPriorities" required>
-        <option value="important">Important</option>
-        <option value="very-important">Very important</option>
-      </select>
-      <button>Add</button>
-    </form>
-  </div>
   <div class="todo-wrapper">
     <div class="todos" v-for="(getTodo, index) in getTodos">
       <input
@@ -224,6 +224,10 @@ const addTodo = () => {
 </script>
 
 <style scoped>
+.wrapper {
+  position: sticky !important;
+  top: 0;
+}
 .name {
   width: 400px;
   position: relative;
