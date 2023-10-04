@@ -281,6 +281,12 @@ const addTodo = () => {
   width: 150px;
   height: 40px;
   cursor: pointer;
+  background: blue;
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 9px;
 }
 
 .enterTodo button {
