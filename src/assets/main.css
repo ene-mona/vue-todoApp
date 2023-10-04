@@ -1,0 +1,18 @@
+
+@import "./base.css";
+
+body {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+@media (max-width: 640px) {
+body {
+        margin: 10px;
+        display: flex;
+        justify-content: start;
+        /* align-items: center; */
+    }
+}
